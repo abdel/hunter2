@@ -69,6 +69,14 @@ module Hunter2
       puts "Password for #{option(:key)}: #{password}"
     end
 
+    def setup
+      Sequel::Migrator.run(
+        Hunter2.database,
+        File.expand_path('../../../migrations', __FILE__),
+          :target => nil
+      )
+    end
+
     protected
 
     def version
