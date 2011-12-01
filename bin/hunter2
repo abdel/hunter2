@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/hunter2', __FILE__)
+
+# Configure the database
+Hunter2.database = Sequel.connect(
+  :adapter   => 'sqlite',
+  :database  => '.hunter2.db',
+  :test      => false,
+  :encoding  => 'utf8'
+)
+
+Hunter2.init
+Shebang.run

@@ -1,0 +1,16 @@
+Gemfile
+MANIFEST
+Rakefile
+bin/hunter2
+database.db
+lib/database.db
+lib/hunter2/command.rb
+lib/hunter2/model/password.rb
+lib/hunter2/spec/bacon/color_output.rb
+lib/hunter2/spec/helper.rb
+lib/hunter2/version.rb
+lib/hunter2.rb
+migrations/1313894524_passwords.rb
+task/build.rake
+task/db.rake
+task/test.rake
