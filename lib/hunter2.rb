@@ -9,7 +9,7 @@ require 'base64'
 end
 
 # Load AES
-key = '42#3b%c$dxyT,7a5=+5fUI3fa7352&^:'
+key = 'YOUR_OWN_SECRET_KEY'
 AES = FastAES.new(key)
 
 # Load all the required Sequel extensions/plugins
